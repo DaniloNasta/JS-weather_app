@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: black;
+    background: linear-gradient(#eaedfd, #89a4f8);
+    background-attachment: fixed;
+}
+
+.weather-box{
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.weather-info{
+    margin-bottom: 32px;
+}
+
+.weather-icon{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s, opacity 1s;
+}
+
+.suggestion,
+.weather-location{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-temperature{
+    font-size: 112px;
+}
+
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+    width: 500px;
+}
+
+.panel h4{
+    font-size: 16px;
+    font-weight: normal;
+    color: steelblue;
+    margin-bottom: 12px;
+}
+
+.js-loading .weather-icon{
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.error-loading .icon-error{
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.js-loading .panel{
+    opacity: 0;
+    transform: scale(0);
+}
